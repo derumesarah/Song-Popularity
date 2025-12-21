@@ -18,8 +18,8 @@ Important: The model is trained on **log-transformed** stream counts for better 
 def load_model():
     return joblib.load("app/random_forest_log_model.pkl")
 
-log_pred = model.predict(input_df)[0]
 model = load_model()
+log_pred = model.predict(input_df)[0]
 
 st.subheader("🔧 Song Attributes")
 
