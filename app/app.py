@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
+import os
 
 st.set_page_config(page_title="Predict Song Streams", layout="wide")
 st.title("Predict Song Popularity")
@@ -13,25 +14,26 @@ Fill in the song attributes below and the trained random forest model will estim
 Important: The model is trained on **log-transformed** stream counts for better generalization._
 """)
 
-# Load model
-@st.cache_resource
-def load_model():
-    return joblib.load("app/random_forest_log_model.pkl")
-
-model = load_model()
-
-import os
-
 MODEL_PATH = "app/random_forest_log_model.pkl"
+
+# Debug: file info
 st.write("ABS PATH:", os.path.abspath(MODEL_PATH))
 st.write("EXISTS:", os.path.exists(MODEL_PATH))
 if os.path.exists(MODEL_PATH):
     st.write("SIZE (bytes):", os.path.getsize(MODEL_PATH))
 
-model = joblib.load(MODEL_PATH)
+@st.cache_resource
+def load_model(model_path: str, file_mtime: float):
+    # file_mtime ist nur da, um den Cache zu invalidieren wenn die Datei ersetzt wird
+    return joblib.load(model_path)
+
+if not os.path.exists(MODEL_PATH):
+    st.error("Model file not found!")
+    st.stop()
+
+model = load_model(MODEL_PATH, os.path.getmtime(MODEL_PATH))
 st.write("TYPE:", type(model))
-
-
+st.write("HAS PREDICT:", hasattr(model, "predict"))
 
 st.subheader("🔧 Song Attributes")
 
