@@ -26,8 +26,7 @@ if not os.path.exists(MODEL_PATH):
     st.stop()
 
 model = load_model(MODEL_PATH, os.path.getmtime(MODEL_PATH))
-st.write("TYPE:", type(model))
-st.write("HAS PREDICT:", hasattr(model, "predict"))
+
 st.subheader("🔧 Song Attributes")
 
 # Layout for input fields
