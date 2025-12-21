@@ -11,7 +11,7 @@ st.markdown("""
 This page is designed to predict the popularity of songs!
 Fill in the song attributes below and the trained random forest model will estimate the expected number of streams.
 
-Important: The model is trained on **log-transformed** stream counts for better generalization._
+Important: The model is trained on **log-transformed** stream counts for better generalization.
 """)
 
 MODEL_PATH = "app/random_forest_log_model.pkl"
