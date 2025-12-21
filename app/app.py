@@ -16,15 +16,9 @@ Important: The model is trained on **log-transformed** stream counts for better 
 
 MODEL_PATH = "app/random_forest_log_model.pkl"
 
-# Debug: file info
-st.write("ABS PATH:", os.path.abspath(MODEL_PATH))
-st.write("EXISTS:", os.path.exists(MODEL_PATH))
-if os.path.exists(MODEL_PATH):
-    st.write("SIZE (bytes):", os.path.getsize(MODEL_PATH))
 
 @st.cache_resource
 def load_model(model_path: str, file_mtime: float):
-    # file_mtime ist nur da, um den Cache zu invalidieren wenn die Datei ersetzt wird
     return joblib.load(model_path)
 
 if not os.path.exists(MODEL_PATH):
