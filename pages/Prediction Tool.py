@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
+import os
 
 st.set_page_config(page_title="Predict Song Streams", layout="wide")
 st.title("Predict Song Popularity")
@@ -10,15 +11,21 @@ st.markdown("""
 This page is designed to predict the popularity of songs!
 Fill in the song attributes below and the trained random forest model will estimate the expected number of streams.
 
-Important: The model is trained on **log-transformed** stream counts for better generalization._
+Important: The model is trained on **log-transformed** stream counts for better generalization.
 """)
 
-# Load model
-@st.cache_resource
-def load_model():
-    return joblib.load("app/random_forest_log_model.pkl")
+MODEL_PATH = "model/random_forest_log_model.pkl"
 
-model = load_model()
+
+@st.cache_resource
+def load_model(model_path: str, file_mtime: float):
+    return joblib.load(model_path)
+
+if not os.path.exists(MODEL_PATH):
+    st.error("Model file not found!")
+    st.stop()
+
+model = load_model(MODEL_PATH, os.path.getmtime(MODEL_PATH))
 
 st.subheader("🔧 Song Attributes")
 
@@ -37,7 +44,7 @@ with col2:
     in_spotify_charts = st.slider("In Spotify Charts", 0, 200, 5)
     in_apple_playlists = st.slider("In Apple Playlists", 0, 200, 3)
     in_apple_charts = st.slider("In Apple Charts", 0, 200, 2)
-    in_deezer_playlists = st.slider("In Deezer Playlists", 0, 100, 1)
+    in_deezer_playlists = st.slider("In Deezer Playlists", 0, 100, 5)
 
 with col3:
     in_deezer_charts = st.slider("In Deezer Charts", 0, 100, 1)
