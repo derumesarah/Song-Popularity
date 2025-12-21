@@ -14,7 +14,7 @@ Fill in the song attributes below and the trained random forest model will estim
 Important: The model is trained on **log-transformed** stream counts for better generalization.
 """)
 
-MODEL_PATH = "app/random_forest_log_model.pkl"
+MODEL_PATH = "model/random_forest_log_model.pkl"
 
 
 @st.cache_resource
