@@ -19,7 +19,7 @@ def load_model():
     return joblib.load("app/random_forest_log_model.pkl")
 
 model = load_model()
-log_pred = model.predict(input_df)[0]
+
 
 st.subheader("🔧 Song Attributes")
 
