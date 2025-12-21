@@ -33,7 +33,7 @@ with col1:
     key_encoded = st.slider("Musical Key (Encoded)", 0, 11, 0)
 
 with col2:
-    in_spotify_playlists = st.slider("In Spotify Playlists", 0, 500, 30)
+    in_spotify_playlists = st.slider("In Spotify Playlists", 0, 1500, 30)
     in_spotify_charts = st.slider("In Spotify Charts", 0, 200, 5)
     in_apple_playlists = st.slider("In Apple Playlists", 0, 200, 3)
     in_apple_charts = st.slider("In Apple Charts", 0, 200, 2)
