@@ -16,7 +16,7 @@ Important: The model is trained on **log-transformed** stream counts for better 
 # Load model
 @st.cache_resource
 def load_model():
-    return joblib.load("models/random_forest_log_model.pkl")
+    return joblib.load("app/random_forest_log_model.pkl")
 
 model = load_model()
 
