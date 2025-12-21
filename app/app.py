@@ -37,7 +37,7 @@ with col2:
     in_spotify_charts = st.slider("In Spotify Charts", 0, 200, 5)
     in_apple_playlists = st.slider("In Apple Playlists", 0, 200, 3)
     in_apple_charts = st.slider("In Apple Charts", 0, 200, 2)
-    in_deezer_playlists = st.slider("In Deezer Playlists", 0, 100, 1)
+    in_deezer_playlists = st.slider("In Deezer Playlists", 0, 100, 5)
 
 with col3:
     in_deezer_charts = st.slider("In Deezer Charts", 0, 100, 1)
