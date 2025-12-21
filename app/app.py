@@ -18,9 +18,17 @@ Important: The model is trained on **log-transformed** stream counts for better 
 def load_model():
     return joblib.load("app/random_forest_log_model.pkl")
 
-
 model = load_model()
 
+
+MODEL_PATH = "app/random_forest_log_model.pkl"
+st.write("ABS PATH:", os.path.abspath(MODEL_PATH))
+st.write("EXISTS:", os.path.exists(MODEL_PATH))
+if os.path.exists(MODEL_PATH):
+    st.write("SIZE (bytes):", os.path.getsize(MODEL_PATH))
+
+model = joblib.load(MODEL_PATH)
+st.write("TYPE:", type(model))
 
 
 st.subheader("🔧 Song Attributes")
