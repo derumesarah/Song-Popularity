@@ -19,6 +19,9 @@ def load_model():
     return joblib.load("app/random_forest_log_model.pkl")
 
 model = load_model()
+st.write("MODEL TYPE:", type(model))
+st.write("MODEL VALUE:", model)
+st.write("HAS PREDICT:", hasattr(model, "predict"))
 
 
 st.subheader("🔧 Song Attributes")
