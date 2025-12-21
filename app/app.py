@@ -20,6 +20,7 @@ def load_model():
 
 model = load_model()
 
+import os
 
 MODEL_PATH = "app/random_forest_log_model.pkl"
 st.write("ABS PATH:", os.path.abspath(MODEL_PATH))
@@ -29,6 +30,7 @@ if os.path.exists(MODEL_PATH):
 
 model = joblib.load(MODEL_PATH)
 st.write("TYPE:", type(model))
+
 
 
 st.subheader("🔧 Song Attributes")
