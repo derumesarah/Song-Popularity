@@ -6,7 +6,7 @@ st.set_page_config(
 )
 
 st.title("🎵 Song Popularity Prediction App")
-st.caption("Predict estimated stream counts based on song data + audio features.")
+st.write("Predict estimated stream counts based on song data + audio features.")
 
 st.markdown("---")
 
