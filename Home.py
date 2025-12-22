@@ -12,7 +12,7 @@ st.markdown("---")
 
 st.subheader("👋 Welcome!")
 st.write(
-    "This project was build to help you estimate the expected number of streams for a song 
+    "This project was build to help you estimate the expected number of streams for a song" 
 )
 
 st.info("👉 Use the **sidebar** (left) to switch between pages anytime.")
