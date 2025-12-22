@@ -21,4 +21,4 @@ st.markdown("### 🧾 What you can do here")
 st.markdown("""
 - **Predict**: Enter song attributes and get an estimated stream count.
 - **Insights**: Learn which patterns and features drive a song’s popularity on streaming platforms
-
+""") 
