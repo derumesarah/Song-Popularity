@@ -13,5 +13,5 @@ This project was build to predict the popularity of a song based on its audio fe
 Use the sidebar to navigate between pages:
 - **Predict** – predict streams
 - **Insights** – project insights
-
+---
 """)
