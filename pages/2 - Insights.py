@@ -18,8 +18,7 @@ st.markdown("---")
 
 st.subheader("🎧 Feature Importance")
 
-st.image("images/Top 10 features Random Forest.png", use_container_width=True)
-
+st.image("images/Top 10 features Random Forest.png", width=500)
 st.image("images/Top 10 features XGBRegressor.png", use_container_width=True)
 
 st.write("""
