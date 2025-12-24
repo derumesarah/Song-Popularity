@@ -17,7 +17,7 @@ st.markdown("---")
 
 st.subheader("✅ Key Takeaways")
 
-st.success("""
+st.write("""
 • **Platform exposure**, especially Spotify playlists, dominates all other factors  
 • Audio features matter, but mostly **in combination**, not isolation  
 • Release timing can influence average performance, but should not be over-interpreted  
