@@ -1,6 +1,5 @@
 import streamlit as st
-from PIL import Image 
-import os
+
 
 st.set_page_config(page_title="Insights", layout="wide")
 
@@ -117,8 +116,8 @@ This may reflect:
 - Seasonal listening behavior
 
 **Key Insight:**  
-Higher streams can be associated with certain months, but only the release month itself 
-does not directly cause a song’s popularity. 
+Higher streams may be associated with certain months, but the release month 
+itself does not directly cause a song’s popularity.
 """)
 
 st.markdown("---")
