@@ -11,7 +11,7 @@ This page summarizes the **most important patterns and relationships** found dur
 of the dataset. The goal is to translate data insights into **clear, actionable understanding**.
 """)
 
-st.markdown(---)
+st.markdown("---")
 
 
 # 1. Feature Importance 
