@@ -13,20 +13,8 @@ of the dataset. The goal is to translate data insights into **clear, actionable 
 
 st.markdown("---")
 
-# 1. Key Takeaways
 
-st.subheader("✅ Key Takeaways")
-
-st.success("""
-• **Platform exposure**, especially Spotify playlists, dominates all other factors  
-• Audio features matter, but mostly **in combination**, not isolation  
-• Release timing can influence average performance, but should not be over-interpreted  
-""")
-
-st.caption("These insights directly inform the model used on the Predict page.")
-
-
-# 2. Feature Importance 
+# 1. Feature Importance 
 
 st.subheader("🎧 Feature Importance")
 
@@ -52,7 +40,7 @@ in predicting streaming success.
 st.markdown("---")
 
 
-# 3. Platform presence 
+# 2. Platform presence 
 
 st.subheader("📲 Platform Exposure & Playlist Presence")
 
@@ -70,7 +58,7 @@ Again, visibility on streaming platforms is a **major driver of popularity**, es
 st.markdown("---")
 
 
-# 4. Audio feautures
+# 3. Audio feautures
 
 st.subheader("🎚️ Audio Features and Popularity")
 
@@ -89,7 +77,7 @@ with platform-related variables.
 st.markdown("---")
 
 
-# 5. Correlation Matrix
+# 4. Correlation Matrix
 
 st.subheader("🔗 Feature Correlations")
 
@@ -110,7 +98,7 @@ This supports the idea that **platform exposure outweighs pure musical attribute
 st.markdown("---")
 
 
-# 6. Seasonal effects
+# 5. Seasonal effects
 
 st.subheader("📅 Seasonal Effects: Release Month")
 
@@ -133,3 +121,14 @@ itself does not directly cause a song’s popularity.
 
 st.markdown("---")
 
+# 6. Key Takeaways
+
+st.subheader("✅ Key Takeaways")
+
+st.success("""
+• **Platform exposure**, especially Spotify playlists, dominates all other factors  
+• Audio features matter, but mostly **in combination**, not isolation  
+• Release timing can influence average performance, but should not be over-interpreted  
+""")
+
+st.caption("These insights directly inform the model used on the Predict page.")
