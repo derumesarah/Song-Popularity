@@ -19,7 +19,7 @@ st.markdown("---")
 st.subheader("🎧 Feature Importance")
 
 st.image("images/Top 10 features Random Forest.png")
-st.image("images/Top 10 features XGBRegressor.png", use_container_width=True)
+st.image("images/Top 10 features XGBRegressor.png")
 
 st.write("""
 Both models agree on the main drivers:
@@ -81,7 +81,7 @@ st.markdown("---")
 
 st.subheader("🔗 Feature Correlations")
 
-st.image("images/Correlation matrix.png", use_container_width=True)
+st.image("images/Correlation matrix.png")
 
 st.write("""
 Key correlation findings:
@@ -102,7 +102,7 @@ st.markdown("---")
 
 st.subheader("📅 Seasonal Effects: Release Month")
 
-st.image("images/Average streams by month.png", use_container_width=True)
+st.image("images/Average streams by month.png")
 
 st.write("""
 Average streams vary noticeably across release months:
