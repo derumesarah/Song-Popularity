@@ -13,7 +13,7 @@ of the dataset. The goal is to translate data insights into **clear, actionable 
 
 st.markdown("---")
 
-# Key Takeaways
+# 1. Key Takeaways
 
 st.subheader("✅ Key Takeaways")
 
@@ -25,7 +25,8 @@ st.success("""
 
 st.caption("These insights directly inform the model used on the Predict page.")
 
-# 1. Feature Importance 
+
+# 2. Feature Importance 
 
 st.subheader("🎧 Feature Importance")
 
@@ -51,7 +52,7 @@ in predicting streaming success.
 st.markdown("---")
 
 
-# 2. Platform presence 
+# 3. Platform presence 
 
 st.subheader("📲 Platform Exposure & Playlist Presence")
 
@@ -69,7 +70,7 @@ Again, visibility on streaming platforms is a **major driver of popularity**, es
 st.markdown("---")
 
 
-# 3. Audio feautures
+# 4. Audio feautures
 
 st.subheader("🎚️ Audio Features and Popularity")
 
@@ -88,7 +89,7 @@ with platform-related variables.
 st.markdown("---")
 
 
-# 4. Correlation Matrix
+# 5. Correlation Matrix
 
 st.subheader("🔗 Feature Correlations")
 
@@ -109,7 +110,7 @@ This supports the idea that **platform exposure outweighs pure musical attribute
 st.markdown("---")
 
 
-# 5. Seasonal effects
+# 6. Seasonal effects
 
 st.subheader("📅 Seasonal Effects: Release Month")
 
