@@ -13,6 +13,17 @@ of the dataset. The goal is to translate data insights into **clear, actionable 
 
 st.markdown("---")
 
+# Key Takeaways
+
+st.subheader("✅ Key Takeaways")
+
+st.success("""
+• **Platform exposure**, especially Spotify playlists, dominates all other factors  
+• Audio features matter, but mostly **in combination**, not isolation  
+• Release timing can influence average performance, but should not be over-interpreted  
+""")
+
+st.caption("These insights directly inform the model used on the Predict page.")
 
 # 1. Feature Importance 
 
@@ -121,14 +132,3 @@ itself does not directly cause a song’s popularity.
 
 st.markdown("---")
 
-# 8. Final Takeaways
-
-st.subheader("✅ Key Takeaways")
-
-st.success("""
-• **Platform exposure**, especially Spotify playlists, dominates all other factors  
-• Audio features matter, but mostly **in combination**, not isolation  
-• Release timing can influence average performance, but should not be over-interpreted  
-""")
-
-st.caption("These insights directly inform the model used on the Predict page.")
