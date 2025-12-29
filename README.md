@@ -28,6 +28,7 @@ song-popularity/
 - Deploy the final model using an interactive Streamlit web app
 
 # 📊 Tech Stack
+```
 Languages: Python
 Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn, xgboost, joblib, streamlit
 Deployment: Streamlit web app 
@@ -36,5 +37,5 @@ Modeling:
 - Random Forest Regressor
 - XGBoost Regressor
 Source: Top Spotify Songs 2023 (Kaggle)
-
+```
 # 
