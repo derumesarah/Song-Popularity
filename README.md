@@ -19,6 +19,7 @@ song-popularity/
 ├── notebook/
 │   └── Song_popularity.ipynb      # Model development in notebook
 └── README.md
+```
 
 # 🚀 Project Objectives
 - Predict the number of Spotify streams for a song using structured song metadata
